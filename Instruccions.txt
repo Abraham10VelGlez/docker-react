@@ -1,0 +1,9 @@
+CONSOLE CMD 
+EXECUTE 1
+docker-compose run --rm app npx create-react-app react-app --use-npm
+EXECUTE 2
+cd react-app
+EXECUTE 3 MOVE FILE 
+mv ../docker-compose.yml .
+EXECUTE 4 FINISH
+docker-compose up
