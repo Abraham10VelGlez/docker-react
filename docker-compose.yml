@@ -1,0 +1,20 @@
+version: '1.1'
+services:
+  app:
+    image: node:20.15.0-alpine
+    volumes:
+      - ./:/app:cached
+    working_dir: /app
+    ports:
+      - 3000:3000
+    command: npm start
+    tty: true
+  #db:
+    #image: postgres
+    #environment:
+      #POSTGRES_PASSWORD: ejemplo
+      
+
+
+
+
